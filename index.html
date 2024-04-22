@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gulp-scss-starter</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <a href="#" class="header__logo">
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#header_logo"></use>
+                    </svg>
+                    <span>Arbray</span>
+                </a>
+
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item"><a href="#" class="header__nav-link">Прематч-вилки</a></li>
+                        <li class="header__nav-item"><a href="#" class="header__nav-link">Лайв-вилки</a></li>
+                        <li class="header__nav-item"><a href="#" class="header__nav-link">Valuebets</a></li>
+                        <li class="header__nav-item"><a href="#" class="header__nav-link">Анализ линий</a></li>
+                        <li class="header__nav-item"><a href="#" class="header__nav-link">Тарифы</a></li>
+                        <li class="header__nav-item"><a href="#" class="header__nav-link">Как ставить</a></li>
+                        <li class="header__nav-item"><a href="#" class="header__nav-link">Калькулятор</a></li>
+                    </ul>
+                </nav>
+
+
+                <div class="header__item">
+                    <button class="btn btn_blue header__btn">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#people_icon"></use>
+                        </svg>
+                        <span>Войти</span>
+                    </button>
+                    <div class="header__select">
+                        <select class="select  js-select">
+                            <option value=""></option>
+                            <option value="ru">RU</option>
+                            <option value="en">EN</option>
+                            <option value="tr">TR</option>
+                        </select>
+                    </div>
+
+                    <button class="header__burger js-header-burger">
+                        <svg data-type="burger">
+                            <use xlink:href="./img/sprites/sprite.svg#menu_icon"></use>
+                        </svg>
+                        <svg data-type="close">
+                            <use xlink:href="./img/sprites/sprite.svg#close_icon"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__menu js-header-menu">
+            <button class="btn btn_blue header__btn">
+                <svg>
+                    <use xlink:href="./img/sprites/sprite.svg#people_icon"></use>
+                </svg>
+                <span>Войти</span>
+            </button>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Прематч-вилки</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Лайв-вилки</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Valuebets</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Анализ линий</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Тарифы</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Как ставить</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Калькулятор</a></li>
+                </ul>
+            </nav>
+            <select class="select header__select js-select">
+                <option value=""></option>
+                <option value="ru">RU</option>
+                <option value="en">EN</option>
+                <option value="tr">TR</option>
+            </select>
+        </div>
+    </header>
+    <main class="main">
+        <section class="intro">
+            <div class="intro__banner">
+                <picture>
+                    <source media="(min-width: 501px)" srcset="./img/content/intro/banner.png">
+                    <img src="./img/content/intro/banner_mob.png" alt="" loading="lazy">
+                </picture>
+            </div>
+            <div class="intro__img intro__img_first">
+                <picture>
+                    <source media="(min-width: 501px)" srcset="./img/content/intro/rectangle.png">
+                    <img src="./img/content/intro/rectangle_mob.png" alt="" loading="lazy">
+                </picture>
+            </div>
+            <div class="intro__img intro__img_second">
+                <picture>
+                    <source media="(min-width: 501px)" srcset="./img/content/intro/rectangle_2.png">
+                    <img src="./img/content/intro/rectangle_2_mob.png" alt="" loading="lazy">
+                </picture>
+            </div>
+            <div class="intro__img intro__img_stingray">
+                <picture>
+                    <source media="(min-width: 501px)" srcset="./img/content/intro/stingray.png">
+                    <img src="./img/content/intro/stingray_mob.png" alt="" loading="lazy">
+                </picture>
+            </div>
+            <div class="container">
+                <div class="intro__content">
+                    <h1 class="intro__title">Поиск надежных и&nbsp;прибыльных букмекерских вилок</h1>
+                    <p class="intro__subtitle">ARBRAY - сервис поиска <br> арбитражных ставок</p>
+                    <div class="intro__buttons">
+                        <button class="btn btn_blue intro__btn">Купить подписку</button>
+                        <button class="btn intro__btn">Попробовать бесплатно</button>
+                    </div>
+                </div>
+                <div class="intro__row">
+                    <div class="intro__col">
+                        <div class="intro__item">
+                            <span class="intro__numb">2 695 226</span>
+                            <span class="intro__text">Активных вилок</span>
+                        </div>
+                        <div class="intro__item">
+                            <span class="intro__numb">847 119</span>
+                            <span class="intro__text">Из них с доходом выше 1%</span>
+                        </div>
+                    </div>
+                    <div class="intro__col">
+                        <div class="intro__item">
+                            <span class="intro__numb">12+</span>
+                            <span class="intro__text">Видов спорта</span>
+                        </div>
+                        <div class="intro__item">
+                            <span class="intro__numb">230+</span>
+                            <span class="intro__text">Букмекеров</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="match">
+            <div class="container match__container">
+                <div class="tabs">
+                    <ul class="tabs__list">
+                        <li class="tabs__item">
+                            <button class="tabs__btn tabs__btn_active">Прематч-вилки</button>
+                        </li>
+                        <li class="tabs__item">
+                            <button class="tabs__btn">Лайв-вилки</button>
+                        </li>
+                        <li class="tabs__item">
+                            <button class="tabs__btn">Valuebets</button>
+                        </li>
+                        <li class="tabs__item">
+                            <button class="tabs__btn">Анализ линий</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="match__filter">
+                    <div class="match__filter-group">
+                        <button class="btn match__filter-btn">
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#icon-redo"></use>
+                            </svg>
+                            Обновить
+                        </button>
+
+                        <button class="btn match__filter-btn">
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#icon-eye-2"></use>
+                            </svg>
+                            Показать скрытые
+                        </button>
+                    </div>
+
+                    <div class="match__filter-group">
+                        <div class="switch-radio match__filter-switch">
+                            <label class="switch-radio__wrap">
+                                <input type="checkbox">
+                                <span class="switch-radio__slider"></span>
+                                <span class="switch-radio__text">Автообновление</span>
+                            </label>
+                        </div>
+                        <div class="switch-radio match__filter-switch">
+                            <label class="switch-radio__wrap">
+                                <input type="checkbox">
+                                <span class="switch-radio__slider"></span>
+                                <span class="switch-radio__text">Отмечать новые</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="match__filter-group">
+                        <button class="control match__filter-control" data-tooltip="Включить звук">
+                            <span class="control__icon">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#icon-notify"></use>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="control match__filter-control" data-tooltip="Включить звук">
+                            <span class="control__icon">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#icon-audio-off"></use>
+                                </svg>
+                            </span>
+                        </button>
+
+                        <select class="select match__filter-select js-select">
+                            <option value="Часовой пояс">Часовой пояс</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <select class="select header__select js-select">
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                            <option value="40">40</option>
+                        </select>
+                    </div>
+                    <div class="match__filter-group">
+                        <button class="btn match__filter-btn">
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#icon-filter"></use>
+                            </svg>
+                            Фильтр (4)
+                        </button>
+                    </div>
+                </div>
+
+                <ul class="match__header">
+                    <li class="match__header-item">
+                        Доход
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#arrow_down2"></use>
+                        </svg>
+                    </li>
+                    <li class="match__header-item">
+                        Дата
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#arrow_down2"></use>
+                        </svg>
+                    </li>
+                    <li class="match__header-item">
+                        Букмекер
+                    </li>
+                    <li class="match__header-item">
+                        Событие
+                    </li>
+                    <li class="match__header-item">
+                        Ставка
+                    </li>
+                    <li class="match__header-item">
+                        Коэффициент
+                    </li>
+                    <li class="match__header-item">
+                        Действие
+                    </li>
+                </ul>
+
+                <div class="match-card">
+                    <div class="match-card__wrapper">
+                        <div class="match-card__col">
+                            <div class="match-card__income">
+                                <div class="match-card__income-num">
+                                    65.3%
+                                </div>
+
+
+                                <div class="match-card__income-time">
+                                    18 минут
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#alarm"></use>
+                                    </svg>
+                                </div>
+
+
+
+
+                                <div class="match-card__income-badge">
+                                    NEW
+                                </div>
+
+                            </div>
+                            <div class="match-card__date">
+                                19.03.2023<br />
+                                13:00
+                            </div>
+                        </div>
+                        <div class="match-card__col">
+                            <div class="match-card__row">
+                                <div class="match-card__bookmaker">
+                                    Pin​nacle
+
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#s-flag"></use>
+                                    </svg>
+
+                                </div>
+
+                                <div class="match-card__event">
+                                    <strong>AC Ajaccio – AS Monaco</strong>
+                                    <span>Волейбол. Pоссия. Cуперлига. Женщины</span>
+                                </div>
+
+                                <div class="match-card__chart">
+                                    <div class="match-card__chart-item">
+                                        <div class="match-card__chart-label">Ставка</div>
+                                        <div class="match-card__chart-value match-card__chart-value_hidden">
+                                            XXX
+                                            <div class="match-card__chart-icon"></div>
+                                            <div class="tooltip">
+                                                Ограниченный доступ. Оформите подписку, чтобы получить полный доступ.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="match-card__chart-item">
+                                        <div class="match-card__chart-label">Коэффициент</div>
+                                        <div class="match-card__chart-value match-card__chart-value_hidden">
+                                            XXX
+                                            <div class="tooltip">
+                                                Ограниченный доступ. Оформите подписку, чтобы получить полный доступ.
+                                            </div>
+                                            <div class="match-card__chart-icon">
+
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#chart-up"></use>
+                                                </svg>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match-card__row">
+                                <div class="match-card__bookmaker">
+                                    Win​line (RU)
+
+                                </div>
+
+                                <div class="match-card__event">
+                                    <strong>Аяччо – Монако</strong>
+                                    <span>Волейбол. Pоссия. Cуперлига. Женщины</span>
+                                </div>
+
+                                <div class="match-card__chart">
+                                    <div class="match-card__chart-item">
+                                        <div class="match-card__chart-label">Ставка</div>
+                                        <div class="match-card__chart-value match-card__chart-value_hidden">
+                                            XXX
+                                            <div class="match-card__chart-icon"></div>
+                                            <div class="tooltip">
+                                                Ограниченный доступ. Оформите подписку, чтобы получить полный доступ.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="match-card__chart-item">
+                                        <div class="match-card__chart-label">Коэффициент</div>
+                                        <div class="match-card__chart-value match-card__chart-value_hidden">
+                                            XXX
+                                            <div class="tooltip">
+                                                Ограниченный доступ. Оформите подписку, чтобы получить полный доступ.
+                                            </div>
+                                            <div class="match-card__chart-icon">
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="match-card__col">
+                            <div class="match-card__action">
+                                <button class="btn match-card__action-more">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#icon-plus"></use>
+                                    </svg>
+                                    Еще 547 вилок
+                                </button>
+
+                                <div class="match-card__action-bottom">
+                                    <button class="match-card__action-btn">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#icon-calc"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="match-card__action-btn">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#icon-eye"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="match-card">
+                    <div class="match-card__wrapper">
+                        <div class="match-card__col">
+                            <div class="match-card__income">
+                                <div class="match-card__income-num">
+                                    62%
+                                </div>
+
+
+                                <div class="match-card__income-time">
+                                    35 минут
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#alarm"></use>
+                                    </svg>
+                                </div>
+
+
+
+
+                                <div class="match-card__income-badge">
+                                    NEW
+                                </div>
+
+                            </div>
+                            <div class="match-card__date">
+                                19.03.2023<br />
+                                00:00
+                            </div>
+                        </div>
+                        <div class="match-card__col">
+                            <div class="match-card__row">
+                                <div class="match-card__bookmaker">
+                                    Pin​nacle
+
+                                </div>
+
+                                <div class="match-card__event">
+                                    <strong>Динамо-Ак Барс Казань(ж) – Динамо Краснодар(ж)</strong>
+                                    <span>Волейбол. Pоссия. Cуперлига. Женщины</span>
+                                </div>
+
+                                <div class="match-card__chart">
+                                    <div class="match-card__chart-item">
+                                        <div class="match-card__chart-label">Ставка</div>
+                                        <div class="match-card__chart-value match-card__chart-value_hidden">
+                                            XXX
+                                            <div class="match-card__chart-icon"></div>
+                                            <div class="tooltip">
+                                                Ограниченный доступ. Оформите подписку, чтобы получить полный доступ.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="match-card__chart-item">
+                                        <div class="match-card__chart-label">Коэффициент</div>
+                                        <div class="match-card__chart-value match-card__chart-value_hidden">
+                                            XXX
+                                            <div class="tooltip">
+                                                Ограниченный доступ. Оформите подписку, чтобы получить полный доступ.
+                                            </div>
+                                            <div class="match-card__chart-icon">
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match-card__row">
+                                <div class="match-card__bookmaker">
+                                    Win​line (RU)
+
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#s-flag"></use>
+                                    </svg>
+
+                                </div>
+
+                                <div class="match-card__event">
+                                    <strong>Dinamo Kazan – Dinamo Krasnodar</strong>
+                                    <span>Volleyball. Russia. Super League. Women</span>
+                                </div>
+
+                                <div class="match-card__chart">
+                                    <div class="match-card__chart-item">
+                                        <div class="match-card__chart-label">Ставка</div>
+                                        <div class="match-card__chart-value match-card__chart-value_hidden">
+                                            XXX
+                                            <div class="match-card__chart-icon"></div>
+                                            <div class="tooltip">
+                                                Ограниченный доступ. Оформите подписку, чтобы получить полный доступ.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="match-card__chart-item">
+                                        <div class="match-card__chart-label">Коэффициент</div>
+                                        <div class="match-card__chart-value match-card__chart-value_hidden">
+                                            XXX
+                                            <div class="tooltip">
+                                                Ограниченный доступ. Оформите подписку, чтобы получить полный доступ.
+                                            </div>
+                                            <div class="match-card__chart-icon">
+
+
+
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#chart-down"></use>
+                                                </svg>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match-card__row">
+                                <div class="match-card__bookmaker">
+                                    Win​line (RU)
+
+                                </div>
+
+                                <div class="match-card__event">
+                                    <strong>Динамо-Ак Барс (ж) – Динамо (ж)</strong>
+                                    <span>Волейбол. Pоссия. Cуперлига. Женщины</span>
+                                </div>
+
+                                <div class="match-card__chart">
+                                    <div class="match-card__chart-item">
+                                        <div class="match-card__chart-label">Ставка</div>
+                                        <div class="match-card__chart-value match-card__chart-value_hidden">
+                                            XXX
+                                            <div class="match-card__chart-icon"></div>
+                                            <div class="tooltip">
+                                                Ограниченный доступ. Оформите подписку, чтобы получить полный доступ.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="match-card__chart-item">
+                                        <div class="match-card__chart-label">Коэффициент</div>
+                                        <div class="match-card__chart-value match-card__chart-value_hidden">
+                                            XXX
+                                            <div class="tooltip">
+                                                Ограниченный доступ. Оформите подписку, чтобы получить полный доступ.
+                                            </div>
+                                            <div class="match-card__chart-icon">
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="match-card__col">
+                            <div class="match-card__action">
+                                <button class="btn match-card__action-more">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#icon-plus"></use>
+                                    </svg>
+                                    Еще 999 вилок
+                                </button>
+
+                                <div class="match-card__action-bottom">
+                                    <button class="match-card__action-btn">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#icon-calc"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="match-card__action-btn">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#icon-eye"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="match-card">
+                    <div class="match-card__wrapper">
+                        <div class="match-card__col">
+                            <div class="match-card__income">
+                                <div class="match-card__income-num">
+                                    55.1%
+                                </div>
+
+
+                                <div class="match-card__income-time">
+                                    18 минут
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#alarm"></use>
+                                    </svg>
+                                </div>
+
+
+
+
+                                <div class="match-card__income-badge">
+                                    NEW
+                                </div>
+
+                            </div>
+                            <div class="match-card__date">
+                                19.03.2023<br />
+                                13:00
+                            </div>
+                        </div>
+                        <div class="match-card__col">
+                            <div class="match-card__row">
+                                <div class="match-card__bookmaker">
+                                    Pin​nacle
+
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#s-flag"></use>
+                                    </svg>
+
+                                </div>
+
+                                <div class="match-card__event">
+                                    <strong>AC Ajaccio – AS Monaco</strong>
+                                    <span>Волейбол. Pоссия. Cуперлига. Женщины</span>
+                                </div>
+
+                                <div class="match-card__chart">
+                                    <div class="match-card__chart-item">
+                                        <div class="match-card__chart-label">Ставка</div>
+                                        <div class="match-card__chart-value match-card__chart-value_hidden">
+                                            XXX
+                                            <div class="match-card__chart-icon"></div>
+                                            <div class="tooltip">
+                                                Ограниченный доступ. Оформите подписку, чтобы получить полный доступ.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="match-card__chart-item">
+                                        <div class="match-card__chart-label">Коэффициент</div>
+                                        <div class="match-card__chart-value match-card__chart-value_hidden">
+                                            XXX
+                                            <div class="tooltip">
+                                                Ограниченный доступ. Оформите подписку, чтобы получить полный доступ.
+                                            </div>
+                                            <div class="match-card__chart-icon">
+
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#chart-up"></use>
+                                                </svg>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match-card__row">
+                                <div class="match-card__bookmaker">
+                                    Win​line (RU)
+
+                                </div>
+
+                                <div class="match-card__event">
+                                    <strong>Аяччо – Монако</strong>
+                                    <span>Волейбол. Pоссия. Cуперлига. Женщины</span>
+                                </div>
+
+                                <div class="match-card__chart">
+                                    <div class="match-card__chart-item">
+                                        <div class="match-card__chart-label">Ставка</div>
+                                        <div class="match-card__chart-value match-card__chart-value_hidden">
+                                            XXX
+                                            <div class="match-card__chart-icon"></div>
+                                            <div class="tooltip">
+                                                Ограниченный доступ. Оформите подписку, чтобы получить полный доступ.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="match-card__chart-item">
+                                        <div class="match-card__chart-label">Коэффициент</div>
+                                        <div class="match-card__chart-value match-card__chart-value_hidden">
+                                            XXX
+                                            <div class="tooltip">
+                                                Ограниченный доступ. Оформите подписку, чтобы получить полный доступ.
+                                            </div>
+                                            <div class="match-card__chart-icon">
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="match-card__col">
+                            <div class="match-card__action">
+                                <button class="btn match-card__action-more">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#icon-plus"></use>
+                                    </svg>
+                                    Еще 547 вилок
+                                </button>
+
+                                <div class="match-card__action-bottom">
+                                    <button class="match-card__action-btn">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#icon-calc"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="match-card__action-btn">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#icon-eye"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="match-card">
+                    <div class="match-card__wrapper">
+                        <div class="match-card__col">
+                            <div class="match-card__income">
+                                <div class="match-card__income-num">
+                                    54%
+                                </div>
+
+
+                                <div class="match-card__income-time">
+                                    35 минут
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#alarm"></use>
+                                    </svg>
+                                </div>
+
+
+
+
+                                <div class="match-card__income-badge">
+                                    NEW
+                                </div>
+
+                            </div>
+                            <div class="match-card__date">
+                                19.03.2023<br />
+                                00:00
+                            </div>
+                        </div>
+                        <div class="match-card__col">
+                            <div class="match-card__row">
+                                <div class="match-card__bookmaker">
+                                    Pin​nacle
+
+                                </div>
+
+                                <div class="match-card__event">
+                                    <strong>Динамо-Ак Барс Казань(ж) – Динамо Краснодар(ж)</strong>
+                                    <span>Волейбол. Pоссия. Cуперлига. Женщины</span>
+                                </div>
+
+                                <div class="match-card__chart">
+                                    <div class="match-card__chart-item">
+                                        <div class="match-card__chart-label">Ставка</div>
+                                        <div class="match-card__chart-value match-card__chart-value_hidden">
+                                            XXX
+                                            <div class="match-card__chart-icon"></div>
+                                            <div class="tooltip">
+                                                Ограниченный доступ. Оформите подписку, чтобы получить полный доступ.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="match-card__chart-item">
+                                        <div class="match-card__chart-label">Коэффициент</div>
+                                        <div class="match-card__chart-value match-card__chart-value_hidden">
+                                            XXX
+                                            <div class="tooltip">
+                                                Ограниченный доступ. Оформите подписку, чтобы получить полный доступ.
+                                            </div>
+                                            <div class="match-card__chart-icon">
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match-card__row">
+                                <div class="match-card__bookmaker">
+                                    Win​line (RU)
+
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#s-flag"></use>
+                                    </svg>
+
+                                </div>
+
+                                <div class="match-card__event">
+                                    <strong>Dinamo Kazan – Dinamo Krasnodar</strong>
+                                    <span>Volleyball. Russia. Super League. Women</span>
+                                </div>
+
+                                <div class="match-card__chart">
+                                    <div class="match-card__chart-item">
+                                        <div class="match-card__chart-label">Ставка</div>
+                                        <div class="match-card__chart-value match-card__chart-value_hidden">
+                                            XXX
+                                            <div class="match-card__chart-icon"></div>
+                                            <div class="tooltip">
+                                                Ограниченный доступ. Оформите подписку, чтобы получить полный доступ.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="match-card__chart-item">
+                                        <div class="match-card__chart-label">Коэффициент</div>
+                                        <div class="match-card__chart-value match-card__chart-value_hidden">
+                                            XXX
+                                            <div class="tooltip">
+                                                Ограниченный доступ. Оформите подписку, чтобы получить полный доступ.
+                                            </div>
+                                            <div class="match-card__chart-icon">
+
+
+
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#chart-down"></use>
+                                                </svg>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match-card__row">
+                                <div class="match-card__bookmaker">
+                                    Win​line (RU)
+
+                                </div>
+
+                                <div class="match-card__event">
+                                    <strong>Динамо-Ак Барс (ж) – Динамо (ж)</strong>
+                                    <span>Волейбол. Pоссия. Cуперлига. Женщины</span>
+                                </div>
+
+                                <div class="match-card__chart">
+                                    <div class="match-card__chart-item">
+                                        <div class="match-card__chart-label">Ставка</div>
+                                        <div class="match-card__chart-value match-card__chart-value_hidden">
+                                            XXX
+                                            <div class="match-card__chart-icon"></div>
+                                            <div class="tooltip">
+                                                Ограниченный доступ. Оформите подписку, чтобы получить полный доступ.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="match-card__chart-item">
+                                        <div class="match-card__chart-label">Коэффициент</div>
+                                        <div class="match-card__chart-value match-card__chart-value_hidden">
+                                            XXX
+                                            <div class="tooltip">
+                                                Ограниченный доступ. Оформите подписку, чтобы получить полный доступ.
+                                            </div>
+                                            <div class="match-card__chart-icon">
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="match-card__col">
+                            <div class="match-card__action">
+                                <button class="btn match-card__action-more">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#icon-plus"></use>
+                                    </svg>
+                                    Еще 999 вилок
+                                </button>
+
+                                <div class="match-card__action-bottom">
+                                    <button class="match-card__action-btn">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#icon-calc"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="match-card__action-btn">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#icon-eye"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="match__more">
+                    <button class="btn match__more-btn">Еще +1 857 482 вилок</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="benefits">
+            <div class="benefits__img">
+                <picture>
+                    <source srcset="./img/content/rectangle_img.png" media="(min-width: 541px)" />
+                    <img src="./img/content/rectangle_mob.png" alt="" loading="lazy" width="748" height="432">
+                </picture>
+            </div>
+            <div class="container">
+                <div class="benefits__wrap">
+                    <div class="benefits__wrap-img">
+                        <picture>
+                            <img src="./img/content/stingray_img.png" alt="" loading="lazy" width="360" height="327">
+                        </picture>
+                    </div>
+                    <div class="benefits__item benefits__item_first">
+                        <div class="benefits__content">
+                            <h2 class="benefits__title">Почему ARBRAY?</h2>
+                            <p class="benefits__text">
+                                Спортивный арбитраж - интересная и прибыльная стратегия,
+                                но надежные ставки часто трудно найти, поэтому доверьтесь профессионалам по поиску надежных ставок!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="benefits__item">
+                        <span class="benefits__icon">
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#search_icon"></use>
+                            </svg>
+                        </span>
+                        <div class="benefits__item-title">Широкий охват спортивных событий</div>
+                        <p class="benefits__item-text">
+                            Наша система покрывает множество спортивных событий во всем мире.
+                        </p>
+                    </div>
+                    <div class="benefits__item">
+                        <span class="benefits__icon">
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#phone_icon"></use>
+                            </svg>
+                        </span>
+                        <div class="benefits__item-title">Простой и интуитивно понятный интерфейс</div>
+                        <p class="benefits__item-text">
+                            Мы предоставляем простой и интуитивно понятный интерфейс для поиска матчей.
+                        </p>
+                    </div>
+                    <div class="benefits__item">
+                        <span class="benefits__icon">
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#analysis_icon"></use>
+                            </svg>
+                        </span>
+                        <div class="benefits__item-title">Большой объем информации о матчах</div>
+                        <p class="benefits__item-text">
+                            У нас вы найдете самые выгодные вилки предстоящих матчей.
+                        </p>
+                    </div>
+                    <div class="benefits__item">
+                        <span class="benefits__icon">
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#bell_icon"></use>
+                            </svg>
+                        </span>
+                        <div class="benefits__item-title">Автоматические оповещения</div>
+                        <p class="benefits__item-text">
+                            Пуш-уведомления, получайте уведомления о новых вилках с высоким доходом.
+                        </p>
+                    </div>
+                    <div class="benefits__item">
+                        <span class="benefits__icon">
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#people_icon_white"></use>
+                            </svg>
+                        </span>
+                        <div class="benefits__item-title">Поддержка пользователей</div>
+                        <p class="benefits__item-text">
+                            Наши специалисты готовы помочь.
+                        </p>
+                    </div>
+                    <div class="benefits__item">
+                        <span class="benefits__icon">
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#calculator_icon"></use>
+                            </svg>
+                        </span>
+                        <div class="benefits__item-title">Калькулятор букмекерских вилок Arbray</div>
+                        <p class="benefits__item-text">
+                            Рассчитайте свой доход максимально точно и лекго в несколько кликов.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="benefits__row swiper js-benefits-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="benefits__item swiper-slide">
+                            <span class="benefits__icon">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#search_icon"></use>
+                                </svg>
+                            </span>
+                            <div class="benefits__item-title">Широкий охват спортивных событий</div>
+                            <p class="benefits__item-text">
+                                Наша система покрывает множество спортивных событий во всем мире.
+                            </p>
+                        </div>
+                        <div class="benefits__item swiper-slide">
+                            <span class="benefits__icon">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#phone_icon"></use>
+                                </svg>
+                            </span>
+                            <div class="benefits__item-title">Простой и интуитивно понятный интерфейс</div>
+                            <p class="benefits__item-text">
+                                Мы предоставляем простой и интуитивно понятный интерфейс для поиска матчей.
+                            </p>
+                        </div>
+                        <div class="benefits__item swiper-slide">
+                            <span class="benefits__icon">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#analysis_icon"></use>
+                                </svg>
+                            </span>
+                            <div class="benefits__item-title">Большой объем информации о матчах</div>
+                            <p class="benefits__item-text">
+                                У нас вы найдете самые выгодные вилки предстоящих матчей.
+                            </p>
+                        </div>
+                        <div class="benefits__item swiper-slide">
+                            <span class="benefits__icon">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#bell_icon"></use>
+                                </svg>
+                            </span>
+                            <div class="benefits__item-title">Автоматические оповещения</div>
+                            <p class="benefits__item-text">
+                                Пуш-уведомления, получайте уведомления о новых вилках с высоким доходом.
+                            </p>
+                        </div>
+                        <div class="benefits__item swiper-slide">
+                            <span class="benefits__icon">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#people_icon_white"></use>
+                                </svg>
+                            </span>
+                            <div class="benefits__item-title">Поддержка пользователей</div>
+                            <p class="benefits__item-text">
+                                Наши специалисты готовы помочь.
+                            </p>
+                        </div>
+                        <div class="benefits__item swiper-slide">
+                            <span class="benefits__icon">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#calculator_icon"></use>
+                                </svg>
+                            </span>
+                            <div class="benefits__item-title">Калькулятор букмекерских вилок Arbray</div>
+                            <p class="benefits__item-text">
+                                Рассчитайте свой доход максимально точно и лекго в несколько кликов.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="arbitrage">
+            <div class="container arbitrage__container">
+                <h2 class="arbitrage__title">ARBRAY - сервис поиска арбитражных ставок</h2>
+
+                <div class="arbitrage__board">
+
+                    <div class="tabs arbitrage__tabs">
+                        <ul class="tabs__list">
+                            <li class="tabs__item">
+                                <button class="tabs__btn tabs__btn_active">SureBets</button>
+                            </li>
+                            <li class="tabs__item">
+                                <button class="tabs__btn">ValueBets</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="arbitrage__board-head">
+                        <div class="arbitrage__tab arbitrage__tab_active">
+                            <div class="arbitrage__tab-left">
+                                <div class="arbitrage__tab-title">SureBets</div>
+                                <div class="arbitrage__tab-text">Стабильный рост дохода от средств при любом исходе</div>
+                            </div>
+                            <div class="arbitrage__tab-icon">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#icon-chart-1"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="arbitrage__tab">
+                            <div class="arbitrage__tab-left">
+                                <div class="arbitrage__tab-title">ValueBets</div>
+                                <div class="arbitrage__tab-text">Простая в использовании долгосрочная прибыль</div>
+                            </div>
+                            <div class="arbitrage__tab-icon">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#icon-chart-2"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="arbitrage__content arbitrage__content_left">
+                        <div class="arbitrage__content-block">
+                            <div class="arbitrage__tab arbitrage__tab_mob">
+                                <div class="arbitrage__tab-left">
+                                    <div class="arbitrage__tab-title">SureBets</div>
+                                    <div class="arbitrage__tab-text">Стабильный рост дохода от средств при любом исходе</div>
+                                </div>
+                                <div class="arbitrage__tab-icon">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#icon-chart-1"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="arbitrage__content-item arbitrage__content-item_first">
+                                <div class="arbitrage__content-title">Что такое арбитражные ставки?</div>
+                                <p class="arbitrage__content-text">
+                                    АРБ - это ситуации на рынке спортивных ставок, когда ставки на все возможные элементы группы
+                                    исходов принесут прибыль при любом исходе, в этом главное отличие от обычной игры со ставками.
+                                </p>
+                                <div class="arbitrage__content-title">Есть ли прибыль?</div>
+                                <p class="arbitrage__content-text">
+                                    Если обычная ставка однажды приносит прибыль, то серия ставок заканчивается убытком.
+                                    Надежные ставки обеспечивают стабильный рост вашего капитала.
+                                </p>
+                            </div>
+
+                            <div class="arbitrage__content-item arbitrage__content-item_second">
+                                <div class="arbitrage__rates">
+                                    <div class="arbitrage__rates-title">Обычные ставки</div>
+                                    <ul class="arbitrage__rates-list">
+                                        <li class="arbitrage__rates-item arbitrage__rates-item_up">
+                                            <span>6 200</span>
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#icon-mark-1"></use>
+                                            </svg>
+                                        </li>
+                                        <li class="arbitrage__rates-item arbitrage__rates-item_up">
+                                            <span>6 800</span>
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#icon-mark-1"></use>
+                                            </svg>
+                                        </li>
+                                        <li class="arbitrage__rates-item arbitrage__rates-item_down">
+                                            <span>4 800</span>
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#icon-mark-2"></use>
+                                            </svg>
+                                        </li>
+                                        <li class="arbitrage__rates-item arbitrage__rates-item_up">
+                                            <span>5 600</span>
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#icon-mark-1"></use>
+                                            </svg>
+                                        </li>
+                                        <li class="arbitrage__rates-item arbitrage__rates-item_down">
+                                            <span>4 800</span>
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#icon-mark-2"></use>
+                                            </svg>
+                                        </li>
+                                        <li class="arbitrage__rates-item arbitrage__rates-item_down">
+                                            <span>-18%</span>
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#icon-mark-2"></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="arbitrage__rates arbitrage__rates_second">
+                                    <div class="arbitrage__rates-figure">
+                                        <picture>
+                                            <img src="./img/content/figure.png" alt="" loading="lazy" width="223" height="199">
+                                        </picture>
+                                    </div>
+                                    <div class="arbitrage__rates-title">Ставки с ARBRAY</div>
+                                    <ul class="arbitrage__rates-list">
+                                        <li class="arbitrage__rates-item">
+                                            <span>5 075</span>
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#icon-mark-3"></use>
+                                            </svg>
+                                        </li>
+                                        <li class="arbitrage__rates-item">
+                                            <span>5 120</span>
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#icon-mark-3"></use>
+                                            </svg>
+                                        </li>
+                                        <li class="arbitrage__rates-item">
+                                            <span>5 240</span>
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#icon-mark-3"></use>
+                                            </svg>
+                                        </li>
+                                        <li class="arbitrage__rates-item">
+                                            <span>5 300</span>
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#icon-mark-3"></use>
+                                            </svg>
+                                        </li>
+                                        <li class="arbitrage__rates-item">
+                                            <span>5 405</span>
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#icon-mark-3"></use>
+                                            </svg>
+                                        </li>
+                                        <li class="arbitrage__rates-item">
+                                            <span>+8.1%</span>
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#icon-mark-3"></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+
+                                    <button class="btn arbitrage__rates-btn">
+                                        Тарифы
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="article">
+            <div class="container">
+                <div class="article__head">
+                    <h2 class="article__title">Статьи и обновления</h2>
+                    <p class="article__text">
+                        Мы постоянно работаем над улучшением сервиса, и отзывы от вас <br> - лучший показатель правильного пути развития.
+                    </p>
+                </div>
+                <div class="article__row swiper js-article-swiper">
+                    <div class="swiper-wrapper">
+                        <a href="#" class="card article__item swiper-slide">
+                            <div class="card__img">
+                                <picture>
+                                    <img src="./img/content/card/1.png" alt="" width="266" height="200" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__body-top">
+                                    <time class="card__data" datetime="2023-04-1">1 Апреля 2023</time>
+                                    <div class="card__body-right">
+                                        <span class="card__badge">Обновления</span>
+                                    </div>
+                                </div>
+                                <div class="card__title">Новые параметры фильтра</div>
+                                <p class="card__text">
+                                    Эта новая функция дает вам больше возможностей использовать BB и зарабатывать больше денег!
+                                    Вы можете добавить новый веб-сайт в настройки вашего фильтра, так что вы сможете получать еще
+                                    больше объявлений, чем раньше.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="card article__item swiper-slide">
+                            <div class="card__img">
+                                <picture>
+                                    <img src="./img/content/card/2.png" alt="" width="266" height="200" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__body-top">
+                                    <time class="card__data" datetime="2023-03-26">26 Марта 2023</time>
+                                    <div class="card__body-right">
+                                        <span class="card__badge">Футбол</span>
+                                        <span class="card__badge">+2</span>
+                                    </div>
+                                </div>
+                                <div class="card__title">А судьи кто? </div>
+                                <p class="card__text card__text_second">
+                                    Совсем скоро стартует Чемпионат Мира по футболу в Катаре.
+                                    Во многом это соревнование будет отличаться от предыдущих.
+                                    В этой статье посмотрим внимательнее на статистику судей, кто из них рубит с плеча,
+                                    а кто, наоборот, пробует успокоить игру словами.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="card article__item swiper-slide">
+                            <div class="card__img">
+                                <picture>
+                                    <img src="./img/content/card/3.png" alt="" width="266" height="200" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__body-top">
+                                    <time class="card__data" datetime="2023-03-26">26 Марта 2023</time>
+                                    <div class="card__body-right">
+                                        <span class="card__badge">Футбол</span>
+                                        <span class="card__badge">+3</span>
+                                    </div>
+                                </div>
+                                <div class="card__title">Трансферные провалы “Челси” </div>
+                                <p class="card__text">
+                                    Совсем скоро стартует Чемпионат Мира по футболу в Катаре.
+                                    Во многом это соревнование будет отличаться от предыдущих.
+                                    В этой статье посмотрим внимательнее на статистику судей, кто из них рубит с плеча,
+                                    а кто, наоборот, пробует успокоить игру словами.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="card article__item swiper-slide">
+                            <div class="card__img">
+                                <picture>
+                                    <img src="./img/content/card/4.png" alt="" width="266" height="200" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__body-top">
+                                    <time class="card__data" datetime="2023-03-13">13 Марта 2023</time>
+                                    <div class="card__body-right">
+                                        <span class="card__badge">Теннис</span>
+                                    </div>
+                                </div>
+                                <div class="card__title">Курьезы на теннисных турнирах</div>
+                                <p class="card__text">
+                                    В статье мы подобрали интересные и порой курьезные случаи, которые когда-либо происходили на
+                                    теннисных турнирах. Такое могло произойти только в теннисе!
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="card article__item swiper-slide">
+                            <div class="card__img">
+                                <picture>
+                                    <img src="./img/content/card/5.png" alt="" width="266" height="200" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__body-top">
+                                    <time class="card__data" datetime="2023-03-2">2 Марта 2023</time>
+                                    <div class="card__body-right">
+                                        <span class="card__badge">Футбол</span>
+                                        <span class="card__badge">QATAR2022</span>
+                                    </div>
+                                </div>
+                                <div class="card__title">Команды на чемпионате мира в Катаре</div>
+                                <p class="card__text">
+                                    Чемпионат мира по футболу 2022 года в Катаре этой зимой приближается с каждым днем.
+                                    Жеребьевка группового этапа уже состоялась, 30 из 32 команд уже известны и разбиты по группам.
+                                    Каковы шансы каждой из них? Кто победит – заведомый фаворит или темная лошадка-аутсайдер?
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="card article__item swiper-slide">
+                            <div class="card__img">
+                                <picture>
+                                    <img src="./img/content/card/4.png" alt="" width="266" height="200" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__body-top">
+                                    <time class="card__data" datetime="2023-03-13">13 Марта 2023</time>
+                                    <div class="card__body-right">
+                                        <span class="card__badge">Теннис</span>
+                                    </div>
+                                </div>
+                                <div class="card__title">Курьезы на теннисных турнирах</div>
+                                <p class="card__text">
+                                    В статье мы подобрали интересные и порой курьезные случаи, которые когда-либо происходили на
+                                    теннисных турнирах. Такое могло произойти только в теннисе!
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <button class="btn article__btn">Смотреть все</button>
+            </div>
+        </section>
+
+        <section class="earn">
+            <div class="container">
+                <div class="earn__content">
+                    <h2 class="earn__title">Начните зарабатывать деньги <br> прямо сейчас!</h2>
+                    <form class="earn__form form">
+                        <div class="form__row">
+                            <label class="form__label">
+                                <input type="email" class="form__input" placeholder="E-mail" name="email">
+                            </label>
+                            <button class="btn btn_blue form__btn">Зарегистрироваться</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__wrap">
+                    <div class="footer__left">
+                        <div class="footer__content">
+                            <a href="" class="footer__logo">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#footer_logo"></use>
+                                </svg>
+                                <span>Arbray</span>
+                            </a>
+                            <a href="mailto:support@arbray.com" class="footer__link" target="_blank">support@arbray.com</a>
+                            <div class="footer__socials">
+                                <a href="#" class="footer__socials-link" target="_blank">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#youtube"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="footer__socials-link" target="_blank">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#telegram"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__select">
+                            <select class="select  js-select">
+                                <option value=""></option>
+                                <option value="ru">RU</option>
+                                <option value="en">EN</option>
+                                <option value="tr">TR</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="footer__row">
+                        <div class="footer__col">
+                            <div class="footer__col-head js-footer-accordion">
+                                <div class="footer__col-title">Вилки</div>
+                                <span class="footer__col-icon">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#arrow_white"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <ul class="footer__list footer__list_open">
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Прематч-вилки</a></li>
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Лайв-вилки</a></li>
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Valuebets</a></li>
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Анализ линий</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__col-head js-footer-accordion">
+                                <div class="footer__col-title">Личный кабинет</div>
+                                <span class="footer__col-icon">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#arrow_white"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <ul class="footer__list">
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Войти</a></li>
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Зарегистрироваться</a></li>
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Оформить подписку</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__col">
+                            <div class="footer__col-head js-footer-accordion">
+                                <div class="footer__col-title">О нас</div>
+                                <span class="footer__col-icon">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#arrow_white"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <ul class="footer__list">
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Как ставить</a></li>
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Тарифы</a></li>
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Партнерская программа</a></li>
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Новости</a></li>
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Статьи</a></li>
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">FAQ</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__col">
+                            <div class="footer__col-head js-footer-accordion">
+                                <div class="footer__col-title">Дополнительно</div>
+                                <span class="footer__col-icon">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#arrow_white"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <ul class="footer__list">
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Условия использования сервиса</a></li>
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Отказ от ответственности</a></li>
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Соглашение на обработку персональных данных</a></li>
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Договор-оферта</a></li>
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Пользовательское соглашение</a></li>
+                                <li class="footer__list-item"><a href="#" class="footer__list-link">Помощь при игровой зависимости</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="footer__copy">ARBRAY &copy;&nbsp;2023</div>
+            </div>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="./libs/select2/select2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <script src="./libs/jquery-3.7.0.min.js"></script>
+    <script src="./libs/select2/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=28517946-dbf1-42a5-9b36-08632da36a93&lang=ru_RU&"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- <script src="js/vendor.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
